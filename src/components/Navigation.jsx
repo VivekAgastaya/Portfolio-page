@@ -1,27 +1,45 @@
 import styled from "styled-components";
-// import { a } from "react-scroll";
+// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link } from "react-scroll"
+import { TbMenuDeep } from "react-icons/tb";
+import { useState } from "react";
+
+
 
 const Navigation = () => {
+
+  const [showMenu, setShowMenu] = useState(false);
+
+
+
   return (
     <Nav>
       <img src="Portfolio-logo.jpg" />
       <div>
-        <a href="#" className="link">Home</a>
-        <a href="#" className="link">About</a>
-        <a href="#" className="link">Skills</a>
-        <a href="#" className="link">Project</a>
-        <a href="#" className="link">Contact Me</a>
-        {/* <ul>
-                <li className="lii">Home</li>
-                <li className="lii">About</li>
-                <li className="lii">Skills</li>
-                <li className="lii">Projects</li>
-                <li className="lii">Contact Me</li>
-            </ul> */}
+        <Link className="link" activeClass="active" to="Home" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}  >Home</Link>
+        <Link className="link" activeClass="active" to="About" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} >About</Link>
+        <Link className="link" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  >Skills</Link>
+        <Link className="link" activeClass="active" to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} >Project</Link>
+        <Link className="link" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}>Contact Me</Link>
+       
       </div>
-      {/* <button>Github Profile</button> */}<div>
-        <a href="https://github.com/VivekAgastaya" className="github">Github Profile</a>
+      <div>
+         <button  onClick={() => {
+          document.getElementsByClassName(".github").scrollIntoView({Behaviour: "smooth"});
+         }}
+         
+         className="button"><a href="https://github.com/VivekAgastaya" className="github">Github Profile</a></button>
       </div>
+
+      <TbMenuDeep  className="mobMenu" onClick={() => setShowMenu(!showMenu)}/>
+      <div className="navMenu" style={{display: showMenu ? "flex" : "none"}}>
+        <Link className="listItem" activeClass="active"  to="Home" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}  onClick={() => setShowMenu(false)}>Home</Link>
+        <Link className="listItem" activeClass="active" to="About" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>About</Link>
+        <Link className="listItem" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  onClick={() => setShowMenu(false)}>Skills</Link>
+        <Link className="listItem" activeClass="active" to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} onClick={() => setShowMenu(false)}>Project</Link>
+        <Link className="listItem" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Contact Me</Link>
+        <Link className="listItem" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Github Profile</Link>
+        </div>
     </Nav>
   )
 }
@@ -36,11 +54,11 @@ justify-content: space-between;
 height: 5rem;
 width: 75rem;
 margin: 0 auto;
-/* background-color: red; */
 align-items: center;
 position: sticky;
 top: 0;
 z-index: 3;
+
 
  img {
     object-fit: cover;
@@ -59,26 +77,10 @@ z-index: 3;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid yellow;
  }
-  /* ul {
-    font-size: 20px;
-    display: flex;
-    list-style: none;
-    cursor: pointer;
-    gap: 1rem;
-  }
 
-   .lii:hover {
-    color: yellow;
-    padding-bottom: 0.2rem;
-    border-bottom: 3px solid yellow;
-  } */
-   
-  /* button {
-    color: white;
-    padding: 10px 10px;
-    margin: 10px;
-    border-radius: 2rem;
-  } */
+  .button {
+    border: none;
+  }
 
    .github {
     color: white;
@@ -87,29 +89,38 @@ z-index: 3;
     border-radius: 20px;
     cursor: pointer;
    }
-
-
-   @media screen and (max-width: 768px) {
-
-    
-  
+   
+   .active {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
    }
 
+   .navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40,40,40);
+    border-radius: 1rem;
+   }
 
+   .listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   .mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+   }
 
 `;

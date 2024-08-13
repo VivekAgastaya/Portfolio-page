@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Intro = () => {
     return (
-        <Introduction >
+        <Introduction id="Home">
             <div className="introContent">
                 <span className="hello">Hello,</span>
                 <span className="introText">I'm <span className="introName"> Vivek Maurya</span><br /> I am Fronted Developer </span>

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Skills = () => {
   return (
-    <Coding>
+    <Coding id="Skill">
         <span className="skillTitle">What I do</span>
         <span className="skillDescription">Aspiring Software developer Passionate about design and develop innovative software solutions, applying problem-solving skills and programming knowledge to create efficient and reliable applications that meet user needs and industry standards</span>
 

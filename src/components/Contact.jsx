@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Contact = () => {
   return (
-    <Connect>
+    <Connect id="Contact">
       <span className="connectTitle">Contact Me</span>
       <span className="connectDescription">
         I'm currently available to take on jobs, so feel free to send me a message about anything that you want me to work on. You can contact anytime.

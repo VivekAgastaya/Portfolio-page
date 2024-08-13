@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Project = () => {
   return (
-    <Pro>
+    <Pro id="Project">
         <span className="projectTitle">Why Choose Me</span>
         <span className="projectDescription">With a strong command of programming languages like Javascript coupled with proficiency in web development and MySQL, I possess a diverse skill set that enables me to create robust software applications, design responsive websites, and effectively manage and manipulate data using database systems. My expertise in these areas empowers me to tackle a wide range of software engineering challenges with precision and efficiency.</span>
         <div className="projectBars">
