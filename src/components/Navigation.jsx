@@ -1,27 +1,27 @@
 import styled from "styled-components";
+// import { a } from "react-scroll";
 
 const Navigation = () => {
   return (
     <Nav>
-        <img src="Portfolio-logo.jpg"/>
-        <div >
-
-          <a href="#" className="link">Home</a>
-          <a href="#" className="link">About</a>
-          <a href="#" className="link">Skills</a>
-          <a href="#" className="link">Project</a>
-          <a href="#" className="link">Contact Me</a>
-            {/* <ul>
+      <img src="Portfolio-logo.jpg" />
+      <div>
+        <a href="#" className="link">Home</a>
+        <a href="#" className="link">About</a>
+        <a href="#" className="link">Skills</a>
+        <a href="#" className="link">Project</a>
+        <a href="#" className="link">Contact Me</a>
+        {/* <ul>
                 <li className="lii">Home</li>
                 <li className="lii">About</li>
                 <li className="lii">Skills</li>
                 <li className="lii">Projects</li>
                 <li className="lii">Contact Me</li>
             </ul> */}
-        </div>
-        {/* <button>Github Profile</button> */}<div>
+      </div>
+      {/* <button>Github Profile</button> */}<div>
         <a href="https://github.com/VivekAgastaya" className="github">Github Profile</a>
-        </div>
+      </div>
     </Nav>
   )
 }
@@ -87,4 +87,29 @@ z-index: 3;
     border-radius: 20px;
     cursor: pointer;
    }
+
+
+   @media screen and (max-width: 768px) {
+
+    
+  
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 `;

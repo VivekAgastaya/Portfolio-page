@@ -3,7 +3,7 @@ import styled from "styled-components"
 const Footer = () => {
   return (
     <Down className="footer">
-        Copyright 2024
+        Copyright © 2024
     </Down>
   )
 }
@@ -19,5 +19,12 @@ align-items: center;
 justify-content: center;
 font-size: large;
 font-weight: 300;
+
+
+@media screen and (max-width: 768px) {
+      
+     font-size: 2vw;
+
+    }
 
 `;

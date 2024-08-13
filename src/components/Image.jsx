@@ -24,12 +24,33 @@ align-items: center;
 
 
   .link {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     object-fit: cover;
     border-radius: 2.1rem;
     margin: 0.5rem;
     margin-bottom: 1rem;
     margin-top: 00rem;
   }
+
+  @media screen and (max-width: 768px) {
+
+    .link {
+      height: 2.2rem;
+      width: 2.2rem;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+    .link {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+  }
+
+
+
+
+
 `;

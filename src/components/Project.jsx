@@ -79,6 +79,66 @@ const Pro = styled.section`
     object-fit: cover; 
   }
 
+  @media screen and (max-width: 768px) {
+    .projectDescription {
+    max-width: 55rem;
+    font-size: 2vw;
+     }
+
+     .projectBars{
+    
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+  }
 
 
+  @media screen and (max-width: 576px) {
+     
+    .projectBars{
+      font-size: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projectImg {
+      height: 18rem;
+      width: 18rem;
+    } 
+   
+  }
+
+
+  @media screen and (max-width:992px) {
+
+    .projectBars {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .projectImg {
+      height: 22rem;
+      width: 22rem;
+    }
+  }
+   
+
+  @media screen and (min-width:768) , (max-width:992px)  {
+    .projectBars {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .projectImg {
+      height: 20rem;
+      width: 20rem;
+    }
+  }
 `;

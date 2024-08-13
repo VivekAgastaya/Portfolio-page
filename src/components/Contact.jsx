@@ -154,5 +154,99 @@ align-items: center;
       height: 3rem;
       width: 3rem;
     }
- }
+}
+
+@media screen and (max-width: 768px) {
+  .connectDescription {
+    font-size: 2vw;
+    max-width: 45rem;
+  }
+
+  .image {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .mail {
+          h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .phone {
+h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .location {
+        h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .contactForm {
+    width: 75vw;
+  }
+
+  .name, .email, .msg {
+    font-size: 0.8rem;
+    }
+
+  .submitBtn {
+    padding: 0.50rem 2.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .connectDescription {
+    font-size: 2vw;
+    max-width: 40rem;
+  }
+
+  .image {
+    height: .8rem;
+    width: .8rem;
+  }
+
+  .mail {
+          h2 {
+      font-size: .8rem;
+    }
+  }
+
+  .phone {
+h2 {
+      font-size: .8rem;
+    }
+  }
+
+  .location {
+        h2 {
+      font-size: .8rem;
+    }
+  }
+
+  .contactForm {
+    width: 70vw;
+  }
+
+  .name, .email, .msg {
+    font-size: 0.7rem;
+    }
+
+  .submitBtn {
+    padding: 0.40rem 2rem;
+    font-size: 0.8rem;
+}
+
+
+  }
+
+}
 `;
+
+
+
+
+
+

@@ -122,4 +122,21 @@ const Coding = styled.section`
         height: 3rem;
         width: 3rem;
     }
+
+    @media screen and (max-width: 768px) {
+        .skillDescription {
+    /* font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 2rem;
+    max-width: 45rem; */
+    font-size: 2vw;
+    text-align: start;
+  }
+
+    }
+
+
+
+
+
 `;
