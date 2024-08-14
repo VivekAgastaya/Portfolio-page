@@ -14,21 +14,14 @@ const Navigation = () => {
 
   return (
     <Nav>
-      <img src="Portfolio-logo.jpg" />
-      <div>
-        <Link className="link" activeClass="active" to="Home" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}  >Home</Link>
-        <Link className="link" activeClass="active" to="About" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} >About</Link>
-        <Link className="link" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  >Skills</Link>
-        <Link className="link" activeClass="active" to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} >Project</Link>
-        <Link className="link" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}>Contact Me</Link>
+      <img src="Portfolio-logo.jpg"  className="img"/>
+      <div className="desktopMenu">
+        <Link className="link"   to="Home" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}  >Home</Link>
+        <Link className="link"  to="About" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} >About</Link>
+        <Link className="link"  to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  >Skills</Link>
+        <Link className="link"  to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} >Project</Link>
+        <Link className="link"  to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}>Contact Me</Link>
        
-      </div>
-      <div>
-         <button  onClick={() => {
-          document.getElementsByClassName(".github").scrollIntoView({Behaviour: "smooth"});
-         }}
-         
-         className="button"><a href="https://github.com/VivekAgastaya" className="github">Github Profile</a></button>
       </div>
 
       <TbMenuDeep  className="mobMenu" onClick={() => setShowMenu(!showMenu)}/>
@@ -38,8 +31,23 @@ const Navigation = () => {
         <Link className="listItem" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  onClick={() => setShowMenu(false)}>Skills</Link>
         <Link className="listItem" activeClass="active" to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} onClick={() => setShowMenu(false)}>Project</Link>
         <Link className="listItem" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Contact Me</Link>
-        <Link className="listItem" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Github Profile</Link>
+       
+       
+        <Link className="listItem" activeClass="active" to="Github" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>
+        <a href="https://github.com/VivekAgastaya"></a> Github Profile</Link>
+         
+
         </div>
+     
+      <div>
+         <button  onClick={() => {
+          document.getElementsByClassName(".github").scrollIntoView({Behaviour: "smooth"});
+         }}
+         
+         className="button desktopMenuBtn"><a href="https://github.com/VivekAgastaya" className="github">Github Profile</a></button>
+      </div>
+
+      
     </Nav>
   )
 }
@@ -121,6 +129,50 @@ z-index: 3;
     display: none;
     object-fit: cover;
     height: 1.8rem;
+    height: 2rem;
+    width: 2rem;
+    color: yellow;
+   }
+
+   @media screen and (max-width: 768px) {
+    .mobMenu {
+      display: flex;
+    }
+
+    .desktopMenuBtn {
+      display: none;
+    }
+
+    .desktopMenu {
+      display: none;
+    }
+
+    .img {
+      display: none;
+    }
+
+    .navMenu {
+    position: absolute;
+    left: 2rem;
+    /* flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content; */
+   }
+   /* .listItem { */
+    /* color: red; */
+    /* padding: 0.5rem 3rem;
+    margin: 0.25rem; */
+    /* background: rgb(30,30,30); */
+   
+
+   /* .mobMenu {
+    object-fit: cover;
+    height: 1.8rem;
+    height: 2rem;
+    width: 2rem;
+    color: yellow;
+   } */
+
    }
 
 `;

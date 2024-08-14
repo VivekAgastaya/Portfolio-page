@@ -95,6 +95,7 @@ const Introduction = styled.section`
 
         @media screen and (max-width: 768px) {
             .introImage {
+                /* margin-top: 1rem; */
                 height: 30rem;
                 width: 40rem;
                 padding-right: 2rem;
@@ -106,6 +107,7 @@ const Introduction = styled.section`
             .introContent {
                 font-size: 8vw;
                 padding-top: 17rem;
+                margin-top: 8rem;
             }
 
             #btn {
