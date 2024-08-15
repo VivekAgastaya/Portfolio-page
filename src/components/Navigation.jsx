@@ -28,14 +28,12 @@ const Navigation = () => {
       <div className="navMenu" style={{display: showMenu ? "flex" : "none"}}>
         <Link className="listItem" activeClass="active"  to="Home" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500}  onClick={() => setShowMenu(false)}>Home</Link>
         <Link className="listItem" activeClass="active" to="About" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>About</Link>
-        <Link className="listItem" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  onClick={() => setShowMenu(false)}>Skills</Link>
+        <Link className="listItem" activeClass="active" to="Skill" spy={true} smooth={true} hashSpy={true} offset={-50} duration={500}  onClick={() => setShowMenu(false)}>Skills</Link>              
         <Link className="listItem" activeClass="active" to="Project" spy={true} smooth={true} hashSpy={true} offset={-40} duration={500} onClick={() => setShowMenu(false)}>Project</Link>
         <Link className="listItem" activeClass="active" to="Contact" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Contact Me</Link>
        
        
-        <Link className="listItem" activeClass="active" to="Github" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>
-        <a href="https://github.com/VivekAgastaya"></a> Github Profile</Link>
-         
+        <a href=" https://github.com/VivekAgastaya" className="listItem" activeClass="active" to="Github" spy={true} smooth={true} hashSpy={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}> Github Profile</a>
 
         </div>
      

@@ -204,25 +204,25 @@ h2 {
   }
 
   .image {
-    height: .8rem;
-    width: .8rem;
+    height: .7rem;
+    width: .7rem;
   }
 
   .mail {
           h2 {
-      font-size: .8rem;
+      font-size: .7rem;
     }
   }
 
   .phone {
 h2 {
-      font-size: .8rem;
+      font-size: .7rem;
     }
   }
 
   .location {
         h2 {
-      font-size: .8rem;
+      font-size: .7rem;
     }
   }
 
@@ -236,7 +236,7 @@ h2 {
 
   .submitBtn {
     padding: 0.40rem 2rem;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
