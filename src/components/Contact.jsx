@@ -1,6 +1,28 @@
 import styled from "styled-components"
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_6yvbz17', 'template_lzy30k8', form.current, {
+        publicKey: 'pkAl76IbS-3-DifG3JkAF',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <Connect id="Contact">
       <span className="connectTitle">Contact Me</span>
@@ -24,13 +46,13 @@ const Contact = () => {
         </div>
       </div>
 
-      <form className="contactForm">
-        <input type="text" className="name" placeholder="Your Name" />
-        <input type="email" className="email" placeholder="Your Email" />
+      <form className="contactForm" ref={form} onSubmit={sendEmail}>
+        <input type="text" className="name" placeholder="Your Name" name="your_name"/>
+        <input type="email" className="email" placeholder="Your Email" name="your_email"/>
         <textarea className="msg" name="message" rows="5" placeholder="Your Message"></textarea>
         <button type="submit" value="send" className="submitBtn">Submit</button>
       </form>
-      
+
     </Connect>
   )
 }
