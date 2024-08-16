@@ -265,7 +265,7 @@ h2 {
 }
   }
 
-  @media screen and (max-width: 430px) and (max-width: 435px) {
+  @media screen and (max-width: 430px)  {
     .common {
       display: flex;
       flex-direction: column;
@@ -276,7 +276,7 @@ h2 {
     }
 
     .location { 
-      margin-left:1rem;
+      margin-left:0px;
      }
 
      .mail {

@@ -60,7 +60,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 height: 5rem;
-width: 75rem;
+/* width: 75rem; */
 margin: 0 auto;
 align-items: center;
 position: sticky;
