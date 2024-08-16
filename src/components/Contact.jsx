@@ -263,8 +263,6 @@ h2 {
     padding: 0.40rem 2rem;
     font-size: 0.7rem;
 }
-
-
   }
 
 }

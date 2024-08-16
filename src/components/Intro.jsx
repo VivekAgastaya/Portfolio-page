@@ -106,8 +106,8 @@ const Introduction = styled.section`
 
             .introContent {
                 font-size: 8vw;
-                padding-top: 17rem;
-                margin-top: 8rem;
+                padding-top: 11rem;
+                margin-top: 3rem;
             }
 
             #btn {
@@ -133,7 +133,7 @@ const Introduction = styled.section`
   @media screen and (max-width: 576px) {
     
     .introImage {
-                height: 25rem;
+                height: 28rem;
                 width: 32rem;
                 padding-right: 2rem;
                 margin-right: 1.9rem;
@@ -165,7 +165,7 @@ const Introduction = styled.section`
     }
   }
 
-  @media screen and (max-width: 992px) {
+  /* @media screen and (max-width: 992px) {
   .introPara {
     width: 33rem;
   }
@@ -173,20 +173,6 @@ const Introduction = styled.section`
   .introContent {
     padding-top: 1rem;
   }
- 
-  }
-
-  
-  /* @media screen and (min-width: 768) , (max-width: 992px) {
-    .introImage {
-        height: 25rem;
-        width: 25rem;
-    } 
-  } */
-
-
-
-
-
+} */
 
 `;
