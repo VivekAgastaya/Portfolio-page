@@ -166,4 +166,5 @@ const Introduction = styled.section`
             margin-bottom: 10rem;
         }
      }
+
 `;

@@ -265,7 +265,7 @@ h2 {
 }
   }
 
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 430px) and (max-width: 435px) {
     .common {
       display: flex;
       flex-direction: column;
@@ -287,8 +287,6 @@ h2 {
   .connectTitle {
     font-size: 2.2rem;
   }
-  
-
 }
 `;
 
