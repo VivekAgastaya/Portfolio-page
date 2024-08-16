@@ -265,6 +265,30 @@ h2 {
 }
   }
 
+  @media screen and (max-width: 430px) {
+    .common {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content:start;
+      align-items: start;
+      gap: 1rem;
+    }
+
+    .location { 
+      margin-left:1rem;
+     }
+
+     .mail {
+      margin-right: auto;
+     }
+  }
+
+  .connectTitle {
+    font-size: 2.2rem;
+  }
+  
+
 }
 `;
 

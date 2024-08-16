@@ -140,5 +140,15 @@ const Pro = styled.section`
       height: 20rem;
       width: 20rem;
     }
+
+    @media screen and (max-width: 430px) {
+      .projectTitle {
+        font-size: 2.2rem;
+      }
+      .projectImg {
+      height: 16rem;
+      width: 16rem;
+    }
+    }
   }
 `;

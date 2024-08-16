@@ -135,6 +135,13 @@ const Coding = styled.section`
 
     }
 
+    @media screen and (max-width: 430px) {
+        .skillTitle {
+            font-size: 2.2rem;
+        }
+    }
+
+
 
 
 
